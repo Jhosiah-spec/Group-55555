@@ -1,15 +1,120 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Group 5 html</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #111; /* deep black */
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        color: #eee;
+        animation: fadeIn 1s ease-in;
+    }
+
+    h1 {
+        color: #ffffff;
+        margin-top: 30px;
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+        animation: slideDown 0.8s ease;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        max-width: 420px;
+        margin: 20px auto;
+    }
+
+    li {
+        background: #1c1c1c;
+        margin: 10px 0;
+        padding: 12px;
+        border-radius: 8px;
+        border-left: 4px solid #8b0000; /* dark red accent */
+        transition: all 0.3s ease;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeUp 0.5s ease forwards;
+    }
+
+    li:nth-child(1) { animation-delay: 0.2s; }
+    li:nth-child(2) { animation-delay: 0.4s; }
+    li:nth-child(3) { animation-delay: 0.6s; }
+    li:nth-child(4) { animation-delay: 0.8s; }
+    li:nth-child(5) { animation-delay: 1s; }
+    li:nth-child(6) { animation-delay: 1.2s; }
+
+    li:hover {
+        background: #262626;
+        transform: translateY(-3px);
+        border-left: 4px solid #ff2e2e;
+    }
+
+    div {
+        margin-top: 40px;
+        animation: fadeIn 1.5s ease;
+    }
+
+    img {
+        width: 80%;
+        max-width: 500px;
+        border-radius: 10px;
+        border: 2px solid #333;
+        transition: all 0.4s ease;
+        opacity: 0;
+        transform: scale(0.95);
+        animation: zoomIn 0.8s ease forwards;
+        animation-delay: 1.3s;
+    }
+
+    img:hover {
+        transform: scale(1.05);
+        border-color: #8b0000;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    /* Animations */
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes zoomIn {
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+</style>
+</style>
 </head>
 <body>
-<section>   
-<div class="buttons">
- <button class="btn-primary" onclick="location.href='https://youtube.com/@apecsclean?si=Yjrr4_soiOamLhSX'">visit us!</button>
-  </div> 
-  </section>
- </div> 
+
     <h1>Members</h1>
     <ul>
         <li>Joaquin Tudlasan - Facilitator</li>
@@ -19,10 +124,12 @@
         <li>Raoemi baljon - spokes person</li>
         <li>Naijhel Batac - spokes person</li>
     </ul>
-    
+    <div>
         
         <h1>Youtube Analytics</h1>
     <a href="https://ibb.co/x8DrbXH5"><img src="https://i.ibb.co/PzNVyFQC/Messenger-creation-6-CFB6-AB5-F2-F4-4-D09-87-BB-A5-D2-A306382-F.jpg" alt="Messenger-creation-6-CFB6-AB5-F2-F4-4-D09-87-BB-A5-D2-A306382-F" border="0"></a>
-
-
+</div>
+<a href="https://www.youtube.com/" target="_blank" class="btn">
+    View our youtube page!
+</a>
 </body>
